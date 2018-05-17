@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck-it</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/screen.css" />
+</head>
+<body>
+
+<h1>Welcome to Chuck Norris' page!</h1>
+
+<input type="submit" value="show Joke!" class="joke" />
+<input type="submit" value="show Movies!" class="movie" />
+
+<article >
+    <input type="submit" value="Joke" />
+    <p class="joke"></p>
+    <label for="category"></label>
+    <input title="Category" id="category" type="text" placeholder="Type your category here" />
+</article>
+
+<article class="movieHide">
+    <input type="submit" value="movies" />
+    <section class="movies flex-container"></section>
+</article>
+
+
+<script src="assets/js/localForage-master/dist/localforage.js" type="text/javascript"></script>
+<script src="assets/js/script.js" type="text/javascript"></script>
+<script src="sw.js" type="text/javascript"></script>
+</body>
+</html>
