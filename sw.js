@@ -11,7 +11,7 @@ self.addEventListener('install', evt => {
                 "/js/script.js",
                 "/images/"
             ])
-        })
+        }).catch(err => console.log(err))
     )
 });
 
