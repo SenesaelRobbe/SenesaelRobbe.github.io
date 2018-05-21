@@ -16,7 +16,14 @@ self.addEventListener('install', evt => {
 });
 
 self.addEventListener('fetch', evt => {
-    evt.respondWith(
-        caches.match(evt.request)
-    ).then(res => console.log(res))
+    evt.respondWith(async function() {
+        const cache = caches.open("v1");
+        const cachedRes = await cache.match(evt.request);
+
+        if(cachedRes){
+            event.waitUntil(cache.add(evt.request));
+            return cachedRes;
+        }
+        return fetch(evt.request);
+    })
 });
