@@ -6,7 +6,7 @@ function main(){
     console.log("I loaded");
     document.querySelector("[value=Joke]").addEventListener("click", fetchJoke);
     document.querySelector("[value=movies]").addEventListener("click", fetchMovies);
-    document.querySelectorAll(".joke, .movie").forEach((item) => item.addEventListener("click", displayButtons));
+    //document.querySelectorAll(".joke, .movie").forEach((item) => item.addEventListener("click", displayButtons));
         //.addEventListener("click", displayButtons);
 }
 
