@@ -26,7 +26,6 @@ self.addEventListener('fetch', evt => {
             return cachedRes;
         }
         //return fetch(evt.request);
-    }).catch(
-        err => console.log(err)
+    })
     )
 });
