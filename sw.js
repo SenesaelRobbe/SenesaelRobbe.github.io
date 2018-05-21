@@ -16,6 +16,7 @@ self.addEventListener('install', evt => {
 });
 
 self.addEventListener('fetch', evt => {
+    console.log(evt.request.url);
     evt.respondWith(async function() {
         const cache = caches.open("v1");
         const cachedRes = await cache.match(evt.request);
