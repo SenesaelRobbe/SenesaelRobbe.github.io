@@ -25,7 +25,7 @@ self.addEventListener('fetch', evt => {
             event.waitUntil(cache.add(evt.request));
             return cachedRes;
         }
-        return fetch(evt.request);
+        //return fetch(evt.request);
     }).catch(
         err => console.log(err)
     )
