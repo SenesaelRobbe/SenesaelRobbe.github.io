@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c72c460-d370-4283-adca-91cb1eaa9ffa" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icons/icon-128x128.png" afterPath="$PROJECT_DIR$/assets/images/icons/icon-128x128.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icons/icon-144x144.png" afterPath="$PROJECT_DIR$/assets/images/icons/icon-144x144.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icons/icon-152x152.png" afterPath="$PROJECT_DIR$/assets/images/icons/icon-152x152.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icons/icon-192x192.png" afterPath="$PROJECT_DIR$/assets/images/icons/icon-192x192.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icons/icon-384x384.png" afterPath="$PROJECT_DIR$/assets/images/icons/icon-384x384.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icons/icon-512x512.png" afterPath="$PROJECT_DIR$/assets/images/icons/icon-512x512.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icons/icon-72x72.png" afterPath="$PROJECT_DIR$/assets/images/icons/icon-72x72.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icons/icon-96x96.png" afterPath="$PROJECT_DIR$/assets/images/icons/icon-96x96.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sw.js" afterPath="$PROJECT_DIR$/sw.js" />
     </list>
     <ignored path="Chucky.iws" />
@@ -36,8 +26,8 @@
       <file leaf-file-name="sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="64" column="3" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
+            <state relative-caret-position="264">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -345,12 +335,12 @@
       <workItem from="1527060063391" duration="24000" />
       <workItem from="1527499128791" duration="934000" />
       <workItem from="1527521661639" duration="2690000" />
-      <workItem from="1527529788013" duration="1800000" />
+      <workItem from="1527529788013" duration="1987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25859000" />
+    <option name="totallyTimeSpent" value="26046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -734,8 +724,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="64" column="3" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
+        <state relative-caret-position="264">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding />
         </state>
       </provider>
