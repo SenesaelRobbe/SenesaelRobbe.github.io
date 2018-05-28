@@ -1,32 +1,32 @@
-const cacheName = "v1";
-const files = [
-    "/",
-    "/index.html",
-    "/assets/",
-    "/assets/reset.css",
-    "/assets/screen.css",
-    "/js/",
-    "/js/script.js",
-    "/images/",
-    "/images/chucky.jpg",
-    "/images/icons",
-    "manifest.json",
-    //"/images/favicon-16x16.png",
-    //"/images/favicon-32x32.png",
-    "/images/icon-72x72.png",
-    "/images/icon-96x96.png",
-    "/images/icon-128x128.png",
-    "/images/icon-144x144.png",
-    "/images/icon-152x152.png",
-    "/images/icon-192x192.png",
-    "/images/icon-384x384.png",
-    "/images/icon-512x512.png",
-];
+
+
 
 self.addEventListener('install', evt => {
     evt.waitUntil(
-        caches.open(cacheName).then(cache => {
-            return cache.addAll(files)
+        caches.open("v1").then(cache => {
+            return cache.addAll([
+                "/",
+                "/index.html",
+                "/assets/",
+                "/assets/reset.css",
+                "/assets/screen.css",
+                "/js/",
+                "/js/script.js",
+                "/images/",
+                "/images/chucky.jpg",
+                "/images/icons",
+                "manifest.json",
+                //"/images/favicon-16x16.png",
+                //"/images/favicon-32x32.png",
+                "/images/icon-72x72.png",
+                "/images/icon-96x96.png",
+                "/images/icon-128x128.png",
+                "/images/icon-144x144.png",
+                "/images/icon-152x152.png",
+                "/images/icon-192x192.png",
+                "/images/icon-384x384.png",
+                "/images/icon-512x512.png",
+            ])
         }).catch(err => console.log(err))
     )
 });
