@@ -7,7 +7,19 @@ const files = [
     "/assets/screen.css",
     "/js/",
     "/js/script.js",
-    "/images/"
+    "/images/",
+    "/images/chucky.jpg",
+    "/images/icons",
+    //"/images/favicon-16x16.png",
+    //"/images/favicon-32x32.png",
+    "/images/icon-72x72.png",
+    "/images/icon-96x96.png",
+    "/images/icon-128x128.png",
+    "/images/icon-144x144.png",
+    "/images/icon-152x152.png",
+    "/images/icon-192x192.png",
+    "/images/icon-384x384.png",
+    "/images/icon-512x512.png",
 ];
 
 self.addEventListener('install', evt => {
@@ -51,17 +63,3 @@ self.addEventListener("activate", evt => {
         })
     )
 });
-
-// self.addEventListener('fetch', evt => {
-//     console.log(evt.request.url);
-//     evt.respondWith(async function() {
-//         const cache = caches.open("v1");
-//         const cachedRes = await cache.match(evt.request);
-//
-//         if(cachedRes){
-//             event.waitUntil(cache.add(evt.request));
-//             return cachedRes;
-//         }
-//         return fetch(evt.request);
-//     })
-// });
