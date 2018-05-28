@@ -1,7 +1,7 @@
 self.addEventListener('install', evt => {
     evt.waitUntil(
         caches.open("v1").then(cache => {
-            return cache.addAll([
+            return cache.addAll(
                 "/",
                 "/index.html",
                 "/assets/",
@@ -10,7 +10,7 @@ self.addEventListener('install', evt => {
                 "/js/",
                 "/js/script.js",
                 "/images/"
-            ])
+            )
         }).catch(err => console.log(err))
     )
 });
