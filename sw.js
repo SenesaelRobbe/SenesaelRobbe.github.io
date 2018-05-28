@@ -1,16 +1,19 @@
+const cacheName = "v1";
+const files = [
+    "/",
+    "/index.html",
+    "/assets/",
+    "/assets/reset.css",
+    "/assets/screen.css",
+    "/js/",
+    "/js/script.js",
+    "/images/"
+];
+
 self.addEventListener('install', evt => {
     evt.waitUntil(
-        caches.open("v1").then(cache => {
-            return cache.addAll([
-                "/",
-                "/index.html",
-                "/assets/",
-                "/assets/reset.css",
-                "/assets/screen.css",
-                "/js/",
-                "/js/script.js",
-                "/images/"
-            ])
+        caches.open(cacheName).then(cache => {
+            return cache.addAll(files)
         }).catch(err => console.log(err))
     )
 });
@@ -28,6 +31,25 @@ self.addEventListener('fetch', evt => {
             })
         )
     }
+});
+
+self.addEventListener("activate", evt => {
+    let expectedCacheNames = Object.keys(CURRENT_CACHES).map( key => CURRENT_CACHES[key]);
+
+    evt.waitUntil(
+        caches.key().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(
+                    cacheName => {
+                        if(expectedCacheNames.indexOf(cacheName) === -1){
+                            console.log("Deleting out of date cache: ", cacheName);
+                            return caches.delete(cacheName);
+                        }
+                    }
+                )
+            )
+        })
+    )
 });
 
 // self.addEventListener('fetch', evt => {
