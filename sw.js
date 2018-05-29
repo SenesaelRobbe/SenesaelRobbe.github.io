@@ -13,19 +13,19 @@ self.addEventListener('install', evt => {
                 // "/assets/js/",
                 "/assets/js/script.js",
                 // "https://senesaelrobbe.github.io/assets/images/icons/assets/images/",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/images/chucky.jpg",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/images/icons",
+                "https://senesaelrobbe.github.io/assets/images/chucky.jpg",
+                // "https://senesaelrobbe.github.io/assets/images/icons/assets/images/icons",
                 "/manifest.json",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/favicon-16x16.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/favicon-32x32.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/icon-72x72.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/icon-96x96.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/icon-128x128.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/icon-144x144.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/icon-152x152.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/icon-192x192.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/icon-384x384.png",
-                "https://senesaelrobbe.github.io/assets/images/icons/assets/icons/images/icon-512x512.png"
+                "https://senesaelrobbe.github.io/assets/images/icons/favicon-16x16.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/favicon-32x32.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/icon-72x72.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/icon-96x96.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/icon-128x128.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/icon-144x144.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/icon-152x152.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/icon-192x192.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/icon-384x384.png",
+                "https://senesaelrobbe.github.io/assets/images/icons/icon-512x512.png"
             ])
         }).catch(err => console.log(err))
     )
