@@ -55,7 +55,7 @@ let fetchMovies = function(){
                 </figure>`
         }})
         .catch(err => console.log(err));
-}};
+});}
 
 
 let categoryLink = function(){
