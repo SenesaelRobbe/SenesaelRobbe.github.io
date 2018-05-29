@@ -42,25 +42,9 @@ input[type=text] {
 
 }
 
-.jokeHide {
-    display: none;
-}
-
-.movieHide {
-    display: none;
-}
-
-.jokeDisplay {
-    display: block;
-}
-
-.movieDisplay {
-    display: block;
-}
-
 .flex-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
 }
