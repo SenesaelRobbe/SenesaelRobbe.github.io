@@ -45,17 +45,17 @@ let fetchMovies = function(){
 
 
             data.forEach((movie) => {
-                for(let i = 0; i <= 5; i++) {
-                console.log(i);
+
 
                 document.querySelector(".movies").innerHTML +=
                 `<figure>
                     <figcaption>${movie.title}</figcaption>
                     <img src='http://image.tmdb.org/t/p/w185/${movie.poster_path}' alt=''/>
                 </figure>`
-        }})
+        })
         .catch(err => console.log(err));
-});}
+});
+};
 
 
 let categoryLink = function(){
