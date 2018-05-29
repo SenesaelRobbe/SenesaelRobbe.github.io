@@ -46,7 +46,7 @@ let fetchMovies = function(){
                 document.querySelector(".movies").innerHTML +=
                 `<figure>
                     <figcaption>${movie.title}</figcaption>
-                    <img src='http://image.tmdb.org/t/p/w185/${movie.poster_path}' alt=''/>
+                    <img src='https://image.tmdb.org/t/p/w185/${movie.poster_path}' alt=''/>
                 </figure>`
         })
 
