@@ -15,7 +15,7 @@ self.addEventListener('install', evt => {
                 "/images/",
                 "/images/chucky.jpg",
                 "/images/icons",
-                "manifest.json",
+                "/manifest.json",
                 //"/images/favicon-16x16.png",
                 //"/images/favicon-32x32.png",
                 // "/images/icon-72x72.png",
