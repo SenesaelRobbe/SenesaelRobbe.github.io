@@ -42,19 +42,15 @@ let fetchMovies = function(){
             //                "<article><h1>" + movie.title
             // + "</h1>" + "<img src='http://image.tmdb.org/t/p/w185/" + movie.poster_path + "' alt=''/>" +
             // "</article>"
-
-
             data.forEach((movie) => {
-
-
                 document.querySelector(".movies").innerHTML +=
                 `<figure>
                     <figcaption>${movie.title}</figcaption>
                     <img src='http://image.tmdb.org/t/p/w185/${movie.poster_path}' alt=''/>
                 </figure>`
         })
-        .catch(err => console.log(err));
-});
+
+}).catch(err => console.log(err));;
 };
 
 
