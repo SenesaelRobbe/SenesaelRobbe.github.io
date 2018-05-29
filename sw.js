@@ -25,7 +25,7 @@ self.addEventListener('install', evt => {
                 "/assets/images/icon-152x152.png",
                 "/assets/images/icon-192x192.png",
                 "/assets/images/icon-384x384.png",
-                "/assets/images/icon-512x512.png",
+                "/assets/images/icon-512x512.png"
             ])
         }).catch(err => console.log(err))
     )
