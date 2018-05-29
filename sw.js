@@ -5,10 +5,10 @@ self.addEventListener('install', evt => {
     evt.waitUntil(
         caches.open("v2").then(cache => {
             return cache.addAll([
-                "/sw.js",
+                "https://senesaelrobbe.github.io/sw.js",
                 "/index.html",
-                "/assets/reset.css",
-                "/assets/screen.css",
+                "/assets/css/reset.css",
+                "/assets/css/screen.css",
                 "/assets/js/script.js",
                 "https://senesaelrobbe.github.io/assets/images/chucky.jpg",
                 "/manifest.json",
