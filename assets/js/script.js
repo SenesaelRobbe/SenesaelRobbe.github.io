@@ -20,7 +20,7 @@ function main(){
 
 let checkForSW = () => {
     if('serviceWorker' in navigator){
-        navigator.serviceWorker.register("/sw.js", {scope: '/'})
+        navigator.serviceWorker.register("/sw.js")
             .then(reg => console.log('registration succeeded. Scope is ' + reg.scope))
             .catch(err => console.log('Exited with err: ', err))
     }
