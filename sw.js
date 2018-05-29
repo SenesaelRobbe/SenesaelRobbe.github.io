@@ -16,16 +16,16 @@ self.addEventListener('install', evt => {
                 "/assets/images/chucky.jpg",
                 "/assets/images/icons",
                 "/manifest.json",
-                "/assets/images/favicon-16x16.png",
-                "/assets/images/favicon-32x32.png",
-                "/assets/images/icon-72x72.png",
-                "/assets/images/icon-96x96.png",
-                "/assets/images/icon-128x128.png",
-                "/assets/images/icon-144x144.png",
-                "/assets/images/icon-152x152.png",
-                "/assets/images/icon-192x192.png",
-                "/assets/images/icon-384x384.png",
-                "/assets/images/icon-512x512.png"
+                "/assets/icons/images/favicon-16x16.png",
+                "/assets/icons/images/favicon-32x32.png",
+                "/assets/icons/images/icon-72x72.png",
+                "/assets/icons/images/icon-96x96.png",
+                "/assets/icons/images/icon-128x128.png",
+                "/assets/icons/images/icon-144x144.png",
+                "/assets/icons/images/icon-152x152.png",
+                "/assets/icons/images/icon-192x192.png",
+                "/assets/icons/images/icon-384x384.png",
+                "/assets/icons/images/icon-512x512.png"
             ])
         }).catch(err => console.log(err))
     )
