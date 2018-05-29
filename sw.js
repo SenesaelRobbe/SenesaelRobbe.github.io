@@ -5,6 +5,7 @@ self.addEventListener('install', evt => {
     evt.waitUntil(
         caches.open("v2").then(cache => {
             return cache.addAll([
+                "/sw.js",
                 "/index.html",
                 "/assets/reset.css",
                 "/assets/screen.css",
