@@ -38,8 +38,10 @@ input[type=text] {
     width: 60%
 }
 
-.movies {
-
+.movies p {
+    font-style: italic;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .flex-container{

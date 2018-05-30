@@ -30,7 +30,7 @@ let fetchJoke = function(){
     fetch(jokeURI + categoryLink())
         .then(data => data.json())
         .then(data => data.value)
-        .then(data => document.querySelector(".joke").innerHTML = data)
+        .then(data => document.querySelector(".joke").innerHTML = `<p>"${data}"</p>`)
         .catch(err => console.log(err));
 };
 
