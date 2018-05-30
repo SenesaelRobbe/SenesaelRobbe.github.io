@@ -34,11 +34,11 @@ self.addEventListener('fetch', evt => {
                     return caches.open("v2").then(function(cache){
                         cache.put(evt.request, response.clone());
                         return response;
-                    })
+                    }).catch(
+                        err => console.log(err)
+                        )
                     })
             })
-        ).catch(
-            err => console.log(err);
         )
     }
 });
