@@ -29,7 +29,7 @@ self.addEventListener('fetch', evt => {
         evt.respondWith(
 
             caches.match(evt.request).then(function(res) {
-                console.log("kk");
+                // console.log("kk");
                 return res ||fetch(evt.request).then(function(response){
                     return caches.open("v2").then(function(cache){
                         cache.put(evt.request, response.clone());
@@ -37,6 +37,8 @@ self.addEventListener('fetch', evt => {
                     })
                     })
             })
+        ).catch(
+            err => console.log(err);
         )
     }
 });
