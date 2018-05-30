@@ -1,6 +1,3 @@
-
-
-
 self.addEventListener('install', evt => {
     evt.waitUntil(
         caches.open("v2").then(cache => {

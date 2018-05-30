@@ -8,6 +8,9 @@ function main(){
     document.querySelector("[value=movies]").addEventListener("click", fetchMovies);
     //document.querySelectorAll(".joke, .movie").forEach((item) => item.addEventListener("click", displayButtons));
         //.addEventListener("click", displayButtons);
+    document.querySelector("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+    });
 }
 
 // let displayButtons = (e) => {
