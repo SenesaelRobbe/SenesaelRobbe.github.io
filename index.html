@@ -13,20 +13,25 @@
 </head>
 <body>
 
-<h1>Welcome to Chuck Norris' page!</h1>
+<div class="wrapper">
+    <header>
+        <h1>Welcome to Chuck Norris' page!</h1>
+    </header>
 
-<article >
-    <input type="submit" value="Joke" />
-    <label for="category"></label>
-    <input title="Category" id="category" type="text" placeholder="Type your category here" />
+    <article class="jokes">
+        <form>
+            <label for="category"></label>
+            <input title="Category" id="category" type="text" placeholder="Type your category here" />
+            <input type="submit" value="Joke" />
+        </form>
+        <p class="joke"></p>
+    </article>
 
-    <p class="joke"></p>
-</article>
-
-<article>
-    <input type="submit" value="movies" />
-    <section class="movies flex-container"></section>
-</article>
+    <article>
+        <input type="submit" value="movies" />
+        <section class="movies flex-container"></section>
+    </article>
+</div>
 
 
 <script src="assets/js/localForage-master/dist/localforage.js" type="text/javascript"></script>
