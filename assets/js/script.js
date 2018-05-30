@@ -64,6 +64,6 @@ let categoryLink = function(){
   if(category == ''){
       return '';
   } else {
-      return `?category=' + ${category}`;
+      return `?category=${category}`;
   }
 };
