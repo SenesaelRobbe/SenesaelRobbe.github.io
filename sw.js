@@ -8,7 +8,7 @@ self.addEventListener('install', evt => {
                 "https://senesaelrobbe.github.io/sw.js",
                 "/index.html",
                 "/assets/css/reset.css",
-                "/assets/css /screen.css",
+                "/assets/css/screen.css",
                 "/assets/js/script.js",
                 "https://senesaelrobbe.github.io/assets/images/chucky.jpg",
                 "/manifest.json",
