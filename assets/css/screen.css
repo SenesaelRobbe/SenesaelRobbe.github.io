@@ -40,9 +40,9 @@ input[type=text] {
 
 .joke p {
     font-style: italic;
-    padding-left: 140px;
+    padding-left: 200px;
     font-weight: bold;
-    /*padding-right: 60px;*/
+    padding-right: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
