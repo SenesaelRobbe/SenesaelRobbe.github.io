@@ -39,6 +39,7 @@ let fetchMovies = function(){
         .then(data => data.json())
         .then(data => data.results)
         .then(data => {
+            document.querySelector(".movies").innerHTML = "";
             //                "<article><h1>" + movie.title
             // + "</h1>" + "<img src='http://image.tmdb.org/t/p/w185/" + movie.poster_path + "' alt=''/>" +
             // "</article>"
