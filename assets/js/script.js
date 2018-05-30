@@ -59,11 +59,11 @@ let fetchMovies = function(){
 
 
 let categoryLink = function(){
-  let category = document.querySelector('[title=Category]').value.toLowerCase();
+  let category = document.querySelector('select').value.toLowerCase();
+    console.log(category);
   if(category == ''){
       return '';
   } else {
-
-      return '?category=' + category;
+      return `?category=' + ${category}`;
   }
 };
