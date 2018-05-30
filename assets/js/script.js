@@ -59,7 +59,7 @@ let fetchMovies = function(){
 
 
 let categoryLink = function(){
-  let category = document.querySelector('[title=Category]').value;
+  let category = document.querySelector('[title=Category]').value.toLowerCase();
   if(category == ''){
       return '';
   } else {
