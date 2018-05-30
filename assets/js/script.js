@@ -41,6 +41,7 @@ let fetchMovies = function(){
     fetch('https://api.themoviedb.org/3/discover/movie?with_cast=51576&api_key=8d86f5dc121d85f4a4651ede8a2fca3c')
         .then(data => data.json())
         .then(data => data.results)
+        .then(data => shuffle(data))
         .then(data => {
             document.querySelector(".movies").innerHTML = "";
             //                "<article><h1>" + movie.title
@@ -57,11 +58,25 @@ let fetchMovies = function(){
 }).catch(err => console.log(err));
 };
 
+let shuffle = function(a){
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+};
+// function shuffle(a) {
+//     for (let i = a.length - 1; i > 0; i--) {
+//         const j = Math.floor(Math.random() * (i + 1));
+//         [a[i], a[j]] = [a[j], a[i]];
+//     }
+//     return a;
+// }
 
 let categoryLink = function(){
   let category = document.querySelector('select').value.toLowerCase();
     console.log(category);
-  if(category == ''){
+  if(category == 'random'){
       return '';
   } else {
       return `?category=${category}`;

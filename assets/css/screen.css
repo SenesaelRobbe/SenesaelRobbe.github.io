@@ -14,19 +14,31 @@ h1 {
 }
 
 figure figcaption {
-    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-input {
+input[value=movies]{
+    width: 100%
+}
+
+input, select {
     padding: 6px 10px;
     border-radius: 2px;
     border: none;
     margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
 }
 
-input[type=submit]{
+/*input {}*/
+
+input[type=submit],
+select,
+option{
     background-color: #37a587;
-    display: block;
+    display: inline-block;
     color: white;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -34,25 +46,25 @@ input[type=submit]{
     min-width: 150px;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, select:hover, option:hover {
     background-color: #2a8c71;
     cursor: pointer;
 }
 
 input[type=submit]:active,
-input[type=submit]:focus {
+input[type=submit]:focus, select:hover, select:active {
     outline: none;
 }
 
-input[type=text] {
-    display: block;
-    border: 1px solid #37a587;
-}
+/*select {*/
+    /*display: block;*/
+    /*border: 1px solid #37a587;*/
+/*}*/
 
-input[type=text]:focus {
-    outline: none;
-    border-color: #2a8c71;
-}
+/*select:focus {*/
+    /*outline: none;*/
+    /*border-color: #2a8c71;*/
+/*}*/
 
 figure figcaption {
     font-weight: bold;
