@@ -3,12 +3,12 @@
         caches.open("v2").then(cache => {
             return cache.addAll([
                 "https://senesaelrobbe.github.io/sw.js",
-                "/index.html",
-                "/assets/css/reset.css",
-                "/assets/css/screen.css",
-                "/assets/js/script.js",
+                "https://senesaelrobbe.github.io/index.html",
+                "https://senesaelrobbe.github.io/assets/css/reset.css",
+                "https://senesaelrobbe.github.io/assets/css/screen.css",
+                "https://senesaelrobbe.github.io/assets/js/script.js",
                 "https://senesaelrobbe.github.io/assets/images/chucky.jpg",
-                "/manifest.json",
+                "https://senesaelrobbe.github.io/manifest.json",
                 "https://senesaelrobbe.github.io/assets/images/icons/favicon-16x16.png",
                 "https://senesaelrobbe.github.io/assets/images/icons/favicon-32x32.png",
                 "https://senesaelrobbe.github.io/assets/images/icons/icon-72x72.png",
