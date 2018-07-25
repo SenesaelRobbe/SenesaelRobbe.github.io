@@ -97,5 +97,5 @@ let handleSub = function(){
     let name = document.querySelector("#name").value;
     let mail = document.querySelector("#mail").value;
     let string = `User ${name} with emailadress ${mail} subscribed!`;
-    console.log(string);
+    alert(string);
 };
