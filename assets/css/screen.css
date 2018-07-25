@@ -71,6 +71,10 @@ figure figcaption {
     color: brown;
 }
 
+.hidden {
+    display: none;
+}
+
 .wrapper {
     padding-top: 10px;
     max-width: 960px;

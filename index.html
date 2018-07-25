@@ -18,8 +18,21 @@
         <h1>Welcome to Chuck Norris' page!</h1>
     </header>
 
+    <input type="submit" value="Show sub" id="subsc" />
+    <form id="subs" class="hidden" >
+        <h2>Subscribe for weekly Chuck Norris jokes! </h2>
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" />
+
+        <label for="mail">Email: </label>
+        <input type="email" id="mail">
+
+        <input type="submit" value="Subscribe" />
+    </form>
+
     <article class="jokes">
-        <form>
+        <form id="jokes">
             <label for="category"></label>
             <select id="category">
                 <option>Random</option>

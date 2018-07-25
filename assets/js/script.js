@@ -1,17 +1,26 @@
 document.addEventListener("DOMContentLoaded", main);
 const jokeURI = 'https://api.chucknorris.io/jokes/random';
 
+//document.querySelectorAll(".joke, .movie").forEach((item) => item.addEventListener("click", displayButtons));
+//.addEventListener("click", displayButtons);
+// document.querySelectorAll("form").addEventListener("submit", (e) => {
+//     e.preventDefault();
+// });
+
 function main(){
-    checkForSW();
+    //checkForSW();
     console.log("I loaded");
     document.querySelector("[value=Joke]").addEventListener("click", fetchJoke);
     document.querySelector("[value=movies]").addEventListener("click", fetchMovies);
-    //document.querySelectorAll(".joke, .movie").forEach((item) => item.addEventListener("click", displayButtons));
-        //.addEventListener("click", displayButtons);
-    document.querySelector("form").addEventListener("submit", (e) => {
-        e.preventDefault();
-    });
+    document.querySelectorAll("form").forEach(item => item.addEventListener("submit", e => e.preventDefault()));
+    document.querySelector("#subsc").addEventListener("click", toggleSub);
+    document.querySelector("[value=Subscribe]").addEventListener("click", handleSub);
 }
+
+let toggleSub = function(e){
+    let subs = document.querySelector("#subs");
+    subs.getAttribute("class") === "hidden" ? subs.removeAttribute("class") : subs.setAttribute("class", "hidden");
+};
 
 // let displayButtons = (e) => {
 //     console.log(e.currentTarget);
@@ -81,4 +90,12 @@ let categoryLink = function(){
   } else {
       return `?category=${category}`;
   }
+};
+
+let handleSub = function(){
+    //I'll only show in console what happens
+    let name = document.querySelector("#name").value;
+    let mail = document.querySelector("#mail").value;
+    let string = `User ${name} with emailadress ${mail} subscribed!`;
+    console.log(string);
 };
