@@ -8,7 +8,7 @@ const jokeURI = 'https://api.chucknorris.io/jokes/random';
 // });
 
 function main(){
-    //checkForSW();
+    checkForSW();
     console.log("I loaded");
     document.querySelector("[value=Joke]").addEventListener("click", fetchJoke);
     document.querySelector("[value=movies]").addEventListener("click", fetchMovies);
