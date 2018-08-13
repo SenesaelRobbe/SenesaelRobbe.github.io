@@ -1,12 +1,6 @@
 document.addEventListener("DOMContentLoaded", main);
 const jokeURI = 'https://api.chucknorris.io/jokes/random';
 
-//document.querySelectorAll(".joke, .movie").forEach((item) => item.addEventListener("click", displayButtons));
-//.addEventListener("click", displayButtons);
-// document.querySelectorAll("form").addEventListener("submit", (e) => {
-//     e.preventDefault();
-// });
-
 function main(){
     checkForSW();
     console.log("I loaded");
@@ -22,13 +16,6 @@ let toggleSub = function(e){
     subs.getAttribute("class") === "hidden" ? subs.removeAttribute("class") : subs.setAttribute("class", "hidden");
 };
 
-// let displayButtons = (e) => {
-//     console.log(e.currentTarget);
-//     console.log(e.currentTarget.getAttribute("class"));
-//     let chosenClass = e.currentTarget.getAttribute("class");
-//
-//     e.currentTarget.classList =  `${chosenClass}Display`;
-// };
 
 let checkForSW = () => {
     if('serviceWorker' in navigator){
@@ -74,13 +61,6 @@ let shuffle = function(a){
     }
     return a;
 };
-// function shuffle(a) {
-//     for (let i = a.length - 1; i > 0; i--) {
-//         const j = Math.floor(Math.random() * (i + 1));
-//         [a[i], a[j]] = [a[j], a[i]];
-//     }
-//     return a;
-// }
 
 let categoryLink = function(){
   let category = document.querySelector('select').value.toLowerCase();
@@ -93,7 +73,6 @@ let categoryLink = function(){
 };
 
 let handleSub = function(){
-    //I'll only show in console what happens
     let name = document.querySelector("#name").value;
     let mail = document.querySelector("#mail").value;
     let string = `User ${name} with emailadress ${mail} subscribed!`;
